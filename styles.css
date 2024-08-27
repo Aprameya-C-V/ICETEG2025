@@ -1,0 +1,145 @@
+/* Apply the Glacial Indifference font to the entire website */
+@import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@400;700&display=swap');
+
+body {
+    font-family: 'Glacial Indifference', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: url('website_hero.png') no-repeat center center fixed; /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+}
+
+/* Specific background setting for non-home pages */
+body.page-other {
+    background: #fff; /* White background for non-home pages */
+}
+
+/* Page-opening animation */
+@keyframes pageAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section,
+.section,
+.navbar {
+    animation: pageAnimation 0.8s ease-out; /* Apply animation to these sections */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(0, 71, 187, 0.8); /* Slightly transparent to blend with background */
+    padding: 10px 20px; /* Reduced padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 20px; /* Reduced font size */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Reduced margin-right */
+}
+
+.navbar .logo-img {
+    width: 40px; /* Reduced width */
+    height: auto;
+    margin-right: 10px; /* Reduced margin-right */
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 15px; /* Reduced margin-left */
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px; /* Reduced font size */
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffdd00;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background: rgba(0, 71, 187, 0.7); /* Semi-transparent background for better text readability */
+    color: #fff;
+    margin-top: 70px; /* Adjust to avoid overlap with fixed navbar */
+    position: relative; /* Ensures the hero-section content is on top of the overlay */
+}
+
+.hero-section h1 {
+    font-size: 50px; /* Adjusted font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 22px; /* Adjusted font size */
+    margin: 0;
+}
+
+.section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #0047bb;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #0047bb;
+    color: #fff;
+}
+
+td {
+    background-color: #fff;
+}
