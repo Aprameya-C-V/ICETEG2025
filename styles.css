@@ -75,22 +75,23 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background-image: url('website_hero.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    padding: 60px 20px; 
-    color: #fff; 
+    background-color: #0047bb; /* Solid color background for contrast */
+    color: #fff; /* White text for better readability */
+    padding: 80px 20px; /* Increased padding for better spacing */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-section h1 {
-    font-size: 4rem; /* Adjust the size as needed */
+    font-size: 4rem; /* Large heading for impact */
     margin-bottom: 20px;
 }
 
 .hero-section p {
-    font-size: 1.25rem; /* Adjust the size as needed */
+    font-size: 1.5rem; /* Slightly larger font size for better readability */
     margin-bottom: 20px;
 }
 
@@ -99,21 +100,22 @@ body {
 }
 
 .cta-buttons .btn {
-    padding: 10px 20px;
-    font-size: 1rem; /* Adjust the size as needed */
+    padding: 12px 24px; /* Increased padding for better click area */
+    font-size: 1.1rem; /* Larger font size for buttons */
     text-decoration: none;
     border-radius: 5px;
     margin: 0 10px;
 }
 
 .cta-buttons .btn.primary {
-    background-color: #007BFF; /* Adjust the color as needed */
-    color: #fff;
+    background-color: #ffdd00; /* Bright color for primary button */
+    color: #0047bb; /* Dark text for contrast */
 }
 
 .cta-buttons .btn.secondary {
-    background-color: #6C757D; /* Adjust the color as needed */
-    color: #fff;
+    background-color: #ffffff; /* White color for secondary button */
+    color: #0047bb; /* Dark text for contrast */
+    border: 2px solid #ffdd00; /* Border to match primary button */
 }
 
 /* About Section */
@@ -129,6 +131,7 @@ body {
     font-size: 32px;
     margin-bottom: 20px;
 }
+
 /* Conference Tracks Section */
 .tracks-section {
     padding: 60px 20px;
@@ -181,7 +184,7 @@ body {
 
 @media (max-width: 1024px) {
     .track {
-        flex: 1 1 calc(50% - 40px); /* 2 cards per row on smaller screens */
+        flex: 1 1 calc(50% - 30px); /* 2 cards per row on smaller screens */
     }
 }
 
@@ -190,7 +193,6 @@ body {
         flex: 1 1 100%; /* Full width on mobile screens */
     }
 }
-
 
 /* Timeline Section */
 .timeline-section {
@@ -225,6 +227,7 @@ body {
     left: 0;
     top: 0;
 }
+
 .timeline-image {
     margin-top: 20px;
 }
@@ -235,6 +238,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
 }
+
 /* Table Styling */
 .table-container {
     width: 100%;
@@ -372,8 +376,6 @@ table tr:hover {
         margin-bottom: 20px;
     }
 }
-
-
 
 /* Footer */
 footer {
